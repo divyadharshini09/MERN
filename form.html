@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+    <link rel="icon" type="image/x-icon" href="c:\Users\USER\Downloads\favicon.ico">
+    <style>
+        h1{
+              color: red;
+              font-style: italic;
+              font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        legend{
+                text-align: center;
+            }
+        body{
+                background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+        form{
+                margin-top: 65px;
+                width: fit-content;
+                color: aliceblue;
+                background-color: rgba(3, 11, 20, 0.58);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        fieldset{
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <form>
+    <fieldset>
+    <legend><h1>SLAME BOOK</h1></legend>
+        <label for="name">Name :</label>
+        <input type="text" id="name"><br><br>
+        <label for="dob">DOB :</label>
+        <input type="datetime" id="dob"><br><br>
+        Hobbies :<br>
+        <input type="checkbox">Singing<br>
+        <input type="checkbox">Dancing<br>
+        <input type="checkbox">Reading<br>
+        <input type="checkbox">Playing<br>
+        <br>
+        <label name="gen">Gender :</label>
+        <input type="radio" name="gen">Male
+        <input type="radio" name="gen">Female
+        <br><br>
+        <label for="tell">Tell me about yourself :</label><br>
+        <textarea id="tell"></textarea>
+        <br><br>
+        <input type="submit" style="background-color: red;">
+        <br><br>
+    </fieldset>
+    </form>
+    </center>
+</body>
+</html>
