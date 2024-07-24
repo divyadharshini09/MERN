@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ChessBoard</title>
+    <style>
+        #row{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
+        }
+        #row > div{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 22px;
+            font-size: 40px;
+        }
+        #item2{
+            background-color: black;
+            color: white;
+        }
+        #item1{
+            background-color: white;
+        }
+        body{
+            background-color: grey;
+        }
+        #main
+        {
+            margin-left: 530px;
+            margin-right: 534px;
+            margin-top: 70px;
+            border: 10px solid red;
+        }
+        .bb{
+            display: grid;
+            grid-template-columns: 150px 150px 150px;
+            margin-top: 50px;
+            margin-left: 185px;
+        }
+        .a{ 
+            background-color: bisque;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .b{
+           background-color: rgb(234, 103, 103);
+           grid-row-start: 2;
+           grid-row-end: 4;
+        }
+        .c{ 
+            background-color: rgb(44, 186, 98);
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .bb > div{
+            border: 5px solid black;
+            border-collapse: collapse;
+            padding: 30px;
+            text-align: center;
+            font-size: 70px;
+        }
+        #second{
+            margin-top: 100px;
+            margin-left: 500px;
+            margin-right: 535px;
+            background-color: rgb(206, 166, 243);
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            background-color: rgb(241, 183, 96);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div id="row">
+          <div id="item1">X</div>
+          <div id="item2">O</div>
+          <div id="item1">X</div>
+          <div id="item2">O</div>
+          <div id="item1">X</div>
+          <div id="item2">O</div>
+          <div id="item1">X</div>
+          <div id="item2">O</div>
+    </div>
+    <div id="row">
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+    </div>
+    <div id="row">
+        <div id="item1">X</div>
+        <div id="item2">O</div>
+        <div id="item1">X</div>
+        <div id="item2">O</div>
+        <div id="item1">X</div>
+        <div id="item2">O</div>
+        <div id="item1">X</div>
+        <div id="item2">O</div>
+    </div>
+    <div id="row">
+        <div id="item2">X</div>
+        <div id="item1">O</div>
+        <div id="item2">X</div>
+        <div id="item1">O</div>
+        <div id="item2">X</div>
+        <div id="item1">O</div>
+        <div id="item2">X</div>
+        <div id="item1">O</div>
+    </div>
+    <div id="row">
+        <div id="item1">X</div>
+        <div id="item2">O</div>
+        <div id="item1">X</div>
+        <div id="item2">O</div>
+        <div id="item1">X</div>
+        <div id="item2">O</div>
+        <div id="item1">X</div>
+        <div id="item2">O</div>
+    </div>
+    <div id="row">
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+    </div>
+    <div id="row">
+        <div id="item1">X</div>
+          <div id="item2">O</div>
+          <div id="item1">X</div>
+          <div id="item2">O</div>
+          <div id="item1">X</div>
+          <div id="item2">O</div>
+          <div id="item1">X</div>
+          <div id="item2">O</div>
+    </div>
+    
+    <div id="row">
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+          <div id="item2">X</div>
+          <div id="item1">O</div>
+    </div>
+</div>
+    <div id="second">
+        <br>
+        <h1>ROWSPAN and COLUMNSPAN using GRID</h1>
+        <div class="bb">
+            <div class="a">1</div>
+            <div class="b">2</div>
+            <div style="background-color: rgb(196, 62, 196);">3</div>
+            <div style="background-color: rgb(222, 205, 51);">4</div>
+            <div class="c">5</div>
+        </div>
+    </div>
+</body>
+</html>
