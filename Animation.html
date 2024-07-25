@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      .box{
+
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: blueviolet;
+        animation-name: anime;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative;
+        animation-timing-function: cubic-bezier(.12,.43,.52,.91);
+        /*animation-direction: reverse;*/
+        top: 20px;
+        left: 20px;
+      }
+      @keyframes anime{
+        0%{
+            top:0px;
+            left: 0px;
+            background-color: blueviolet;
+        }
+        25%{
+            top:0px;
+            left: 200px;
+            background-color: rgb(49, 198, 232);
+        }
+        50%{
+            top:200px;
+            left: 200px;
+            background-color: rgb(43, 226, 83);
+        }
+        75%{
+            top:200px;
+            left: 0px;
+            background-color: rgb(226, 183, 43);
+        }
+        100%{
+            top:0px;
+            left: 0px;
+            background-color: rgb(226, 52, 43);
+        }
+      }
+      .cc{
+        margin-top: 300px;
+        margin-left: 100px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: blueviolet;
+        animation-name: circ;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative;
+        /*animation-timing-function: cubic-bezier(.12,.43,.52,.91);*/
+        /*animation-direction: reverse;*/
+        top: 20px;
+        left: 20px;
+      }
+      @keyframes circ{
+        0%{
+            transform: rotate(0deg)
+            translateY(100px) rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg)
+            translateY(100px) rotate(360deg);
+        }
+      }
+      .hh{
+        margin-top: 300px;
+           background-color: red;
+           width: 200px;
+           height: 200px;
+           transition-property: width;
+           transition-duration: 1s;
+      }
+      .hh:hover{
+        width:400px;
+      }
+      .box,.cc,.hh{
+        margin-left: 800px;
+      }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="cc"></div>
+    <div class="hh"></div>
+</body>
+</html>
